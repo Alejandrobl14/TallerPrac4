@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Coordenadas del sensor
+        double x = -6;
+        double y = 8;
+
+        // Valor absoluto de las coordenadas
+        double absX = Math.Abs(x);
+        double absY = Math.Abs(y);
+
+        // Aplicación del Teorema de Pitágoras
+        double distancia = Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
+
+        // Mostrar resultados
+        Console.WriteLine("Valor absoluto de X: " + absX);
+        Console.WriteLine("Valor absoluto de Y: " + absY);
+        Console.WriteLine("Distancia al origen: " + distancia);
+    }
+}
