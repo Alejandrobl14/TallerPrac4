@@ -1,0 +1,33 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Datos del sistema
+        string entorno = "Produccion";
+        string proyecto = "SistemaAcademico";
+
+        // Valores de servidores
+        int servidor1 = 245;
+        int servidor2 = 198;
+
+        // Obtener valor máximo
+        int mayor = Math.Max(servidor1, servidor2);
+
+        // Primera letra del entorno
+        string inicial = entorno.Substring(0, 1);
+
+        // Últimos 3 caracteres del proyecto
+        string ultimosTres = proyecto.Substring(proyecto.Length - 3);
+
+        // Construir token
+        string token = $"{inicial}{mayor}{ultimosTres}";
+
+        // Convertir a mayúsculas
+        token = token.ToUpper();
+
+        // Mostrar token
+        Console.WriteLine("Token generado: " + token);
+    }
+}
