@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Datos del docente
+        string nombre = "Carlos";
+        string apellido = "Perez";
+
+        // Crear correo usando concatenación
+        string correo = nombre + "." + apellido + "@institucion.edu.co";
+
+        // Mostrar correo
+        Console.WriteLine("Correo generado: " + correo.ToLower());
+
+        // Otra forma usando string.Concat
+        string correo2 = string.Concat(nombre, ".", apellido, "@institucion.edu.co");
+
+        Console.WriteLine("Correo usando Concat: " + correo2.ToLower());
+    }
+}
