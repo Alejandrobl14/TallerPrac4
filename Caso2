@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Notas del estudiante
+        double nota1 = 4.3;
+        double nota2 = 3.8;
+
+        // Calcular promedio
+        double promedio = (nota1 + nota2) / 2;
+
+        // Redondear al entero más cercano
+        double promedioRedondeado = Math.Round(promedio);
+
+        // Obtener la nota más alta
+        double notaMaxima = Math.Max(nota1, nota2);
+
+        // Mostrar resultados
+        Console.WriteLine("Promedio: " + promedio);
+        Console.WriteLine("Promedio redondeado: " + promedioRedondeado);
+        Console.WriteLine("Nota máxima: " + notaMaxima);
+    }
+}
