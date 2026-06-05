@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Datos del servicio
+        string ip = "192.168.1.100";
+        int puerto = 8080;
+        string estado = "Activo";
+
+        // Mostrar información usando interpolación
+        Console.WriteLine($"IP: {ip} | Puerto: {puerto} | Estado: {estado}");
+    }
+}
