@@ -1,0 +1,30 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Nombre ingresado por el usuario
+        string servidor = "SeRvIdOrPrInCiPaL";
+
+        // Convertir a minúsculas
+        string servidorMinusculas = servidor.ToLower();
+
+        // Obtener longitud
+        int longitud = servidorMinusculas.Length;
+
+        // Mostrar resultados
+        Console.WriteLine("Servidor normalizado: " + servidorMinusculas);
+        Console.WriteLine("Cantidad de caracteres: " + longitud);
+
+        // Validar longitud máxima
+        if (longitud <= 15)
+        {
+            Console.WriteLine("Nombre válido.");
+        }
+        else
+        {
+            Console.WriteLine("Nombre demasiado largo.");
+        }
+    }
+}
