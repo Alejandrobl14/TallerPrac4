@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Nombre y apellido del usuario
+        string nombre = "Alejandro";
+        string apellido = "Burbano";
+
+        // Obtener primera letra de cada palabra
+        char inicialNombre = nombre[0];
+        char inicialApellido = apellido[0];
+
+        // Mostrar avatar
+        Console.WriteLine($"Avatar: {inicialNombre}{inicialApellido}");
+    }
+}
