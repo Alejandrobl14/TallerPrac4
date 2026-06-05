@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Correo electrónico
+        string correo = "usuario@gmail.com";
+
+        // Buscar posición de la arroba
+        int posicionArroba = correo.IndexOf('@');
+
+        // Obtener nombre de usuario
+        string usuario = correo.Substring(0, posicionArroba);
+
+        // Obtener dominio
+        string dominio = correo.Substring(posicionArroba + 1);
+
+        // Mostrar resultados
+        Console.WriteLine("Usuario: " + usuario);
+        Console.WriteLine("Dominio: " + dominio);
+    }
+}
