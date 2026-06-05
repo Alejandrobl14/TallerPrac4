@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Valor de matrícula
+        double matricula = 2500000;
+
+        // Calcular descuento
+        double descuento = matricula * 0.15;
+
+        // Valor final
+        double total = matricula - descuento;
+
+        // Redondear hacia arriba
+        double totalRedondeado = Math.Ceiling(total);
+
+        // Mostrar recibo
+        Console.WriteLine($"Valor Base: {matricula:C}");
+        Console.WriteLine($"Descuento: {descuento:C}");
+        Console.WriteLine($"Valor Final: {totalRedondeado:C}");
+    }
+}
