@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Código recibido
+        string codigo = "   OLD-ING-2025   ";
+
+        // Eliminar espacios
+        codigo = codigo.Trim();
+
+        // Reemplazar prefijo
+        codigo = codigo.Replace("OLD-", "NEW-");
+
+        // Verificar si pertenece a Ingeniería
+        bool esIngenieria = codigo.Contains("ING");
+
+        // Mostrar resultados
+        Console.WriteLine("Código corregido: " + codigo);
+        Console.WriteLine("¿Pertenece a Ingeniería?: " + esIngenieria);
+    }
+}
